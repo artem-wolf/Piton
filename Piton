@@ -1,0 +1,32 @@
+def menu():
+	cmd=input('>')
+	if cmd == '*fell':
+		print('lol')
+		menu()
+	elif cmd == '*ping':
+		print('pong')
+		menu()
+	elif cmd == '*help':
+		print('*fell')
+		print('*ping')
+		print('*egor')
+		menu()
+	elif cmd =='*egor':
+		name=input('видите имя:')
+		let=input('видите возраст:')
+		if (name=='egor') and (let=='14'):
+			print('здрасте')
+		game=input('игра:')
+		cod=input('прогромирование:')
+		if (game=='minecraft') and (cod=='питон'):
+			print ('молодец')
+			menu()
+		else:
+			print('довай пока')
+			quit()
+	else:
+		print('токой команды нету иди в пень пиши *help')
+		menu()
+print('здрасте вас приветсвует ростелеком')
+print('веди команду сабака')
+menu()
